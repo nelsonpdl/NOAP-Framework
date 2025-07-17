@@ -84,11 +84,11 @@ NOAP divides intelligent prompting into **8 functional modules**, forming a synt
 
 ## 📜 License
 
-MIT © Nelson Padilla – [Dynibyte](https://dynibyte.com)
+MIT © Nelson Padilla 
 
 ---
 
 ## 💬 Questions?
 
-DM me on Twitter/X → [@nelson_ai](https://x.com/nelson_ai)
+DM me on Twitter/X → [@nelson_ai](https://x.com/nelsonpadil_)
 
