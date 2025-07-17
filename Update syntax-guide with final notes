@@ -1,0 +1,56 @@
+# NOAP Syntax Guide
+
+NOAP (Neuro-Optimus AGI Prompt) uses a modular syntax inspired by cognitive architecture. Prompts are built using `::module_name` declarations that define the structure and execution logic of cognitive agents.
+
+---
+
+## 🧠 Syntax Format
+
+Each module starts with `::` followed by its name. You can activate one or multiple modules in any order (depending on the version).
+
+**Example:**
+```text
+::identity
+::intent
+::context_module
+::execution_module
+
+| Module               | Purpose                                                    |
+| -------------------- | ---------------------------------------------------------- |
+| `::identity_module`  | Defines the expert role or agent identity                  |
+| `::intent_module`    | Describes the mission or purpose of the prompt             |
+| `::context_module`   | Provides external data or situation awareness              |
+| `::execution_module` | Contains the action plan, steps, or instructions to follow |
+| `::output_trigger`   | Triggers the response. Always used at the end              |
+
+| Module                      | Purpose                                                   |
+| --------------------------- | --------------------------------------------------------- |
+| `::modular_brain_module`    | Defines internal memory, feedback, and decision structure |
+| `::llm_independence_module` | Describes how the agent minimizes reliance on LLMs        |
+| `::self_feedback`           | Activates self-review before answering                    |
+| `::output_style`            | Sets tone: executive, casual, strategic, etc.             |
+
+| Module                  | Purpose                                                  |
+| ----------------------- | -------------------------------------------------------- |
+| `::adjust_if`           | Triggers adaptive response if certain conditions are met |
+| `::refer_past_decision` | Refers to memory or previous decisions for consistency   |
+| `::context-awareness`   | Enables deep understanding of situation before acting    |
+| `::evolve`              | Activates logic for real-time mutation and optimization  |
+
+✅ Output Block Format
+Most NOAP prompts end with a structured output block, usually in JSON or organized sections. This improves clarity and makes outputs machine-readable.
+
+Example:
+{
+  "segments": [],
+  "competitor_analysis": [],
+  "positioning": "",
+  "opportunity_scores": []
+}
+
+💡 Notes
+Always end with ::output_trigger or it won’t execute properly.
+
+You can customize and create your own modules (e.g., ::emotional_layer, ::agent_reflex) based on cognitive needs.
+
+.nml is the preferred format for saving NOAP prompts as files.
